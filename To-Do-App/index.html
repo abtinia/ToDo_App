@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List app</title>
+    <!-- 스타일 적용 -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- defer : 비동기적으로 문서 로드, html 파싱 후 html요소들을 모두 실행 
+    같은 비동기적 문서 로딩 방식인 async는 js파일이 실행되는 순간 html파싱이 끊김
+    -->
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="todo-app">
+        <h2>To-Do List <img src="images/icon.png" /></h2>
+        <div class="row">
+          <input type="text" id="input-box" placeholder="Add your text" />
+          <button onclick="addTask()">Add</button>
+        </div>
+        <ul id="list-container">
+          <!-- <li class="checked">Task 1</li>
+          <li>Task 2</li>
+          <li>Task 3</li> -->
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
